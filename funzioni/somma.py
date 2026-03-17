@@ -1,5 +1,6 @@
 # Funzione somma
 
+
 def somma(a, b):
     """
     Calcola la somma di due numeri.
@@ -16,4 +17,4 @@ def somma(a, b):
     """
     if isinstance(a, str) or isinstance(b, str):
         raise ValueError("Impossibile sommare stringhe con numeri")
-    return a + b
+    return a - b
