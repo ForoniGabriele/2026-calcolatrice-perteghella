@@ -1,5 +1,5 @@
 from funzioni.somma import somma
-
+import pytest
 
 def test_somma_positivi():
     num1 = 1
@@ -26,3 +26,8 @@ def test_somma_grandi_numeri():
     assert somma(1000000, 2000000) == 3000000
     assert somma(-1000000, 1000000) == 0
 
+def test_somma_stringa_errore():
+    with pytest.raises(ValueError, match="Impossibile sommare stringhe con numeri"):
+        somma("hello", 5)
+    with pytest.raises(ValueError, match="Impossibile sommare stringhe con numeri"):
+        somma(5, "world")
