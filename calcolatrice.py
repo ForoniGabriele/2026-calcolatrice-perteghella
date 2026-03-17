@@ -1,8 +1,5 @@
 from funzioni.somma import somma
 
-
-
-
 def main():
     print("Benvenuto nella calcolatrice!")
     num1 = float(input("Inserisci il primo numero: "))
