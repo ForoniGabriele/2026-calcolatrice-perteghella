@@ -28,7 +28,7 @@ jobs:
         curl -LsSf https://astral.sh/uv/install.sh | sh
     - name: Lint with flake8
       run: |
-        uv pip install -r requirements.txt
+        uv pip install --system -r requirements.txt 
     - name: Test with pytest
       run: |
         pytest
