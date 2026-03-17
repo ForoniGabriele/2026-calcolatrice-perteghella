@@ -12,5 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Calculate sum
-        run: |
+        run: |  
+          pwd
           python calcolatrice.py 1 2
