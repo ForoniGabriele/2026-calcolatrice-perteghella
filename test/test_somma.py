@@ -25,3 +25,4 @@ def test_somma_float():
 def test_somma_grandi_numeri():
     assert somma(1000000, 2000000) == 3000000
     assert somma(-1000000, 1000000) == 0
+
